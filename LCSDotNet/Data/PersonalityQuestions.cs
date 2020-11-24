@@ -367,6 +367,13 @@ namespace LCSDotNet.Data
         private static void QuestionTen(ConsoleWindow console, Player player)
         {
             while (console.WindowUpdate()) {
+                console.Write(3, 1, "For the past few years, I've been...");
+                console.Write(7, 1, "A - Stealing from corporations. I know they're still keeping more secrets.");
+                console.Write(9, 1, "B - A violent criminal. Nohing can change me, or stand in my way.");
+                console.Write(11, 1, "C - Taking college courses. I can see how much the country needs help.");
+                console.Write(13, 1, "D - Surviving alone, just like everyone else. But we can't go on like this.");
+                console.Write(15, 1, "E - Writing my manifesto and refining my image. I'm ready to lead.");
+                
                 switch (console.GetInput(false)) {
                     case "a":
                         player.addToAttribute(2f, Attribute.Intelligence);
