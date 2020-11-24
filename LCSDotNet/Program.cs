@@ -17,9 +17,7 @@ namespace LCSDotNet
         public static void Main(string[] args)
         {
             console = new ConsoleWindow(48, 128, "Liberal Crime Squad");
-            while (console.WindowUpdate()) {
-                Game game = new Game(console);
-            }
+            Game game = new Game(console);
         }
     }
 }
