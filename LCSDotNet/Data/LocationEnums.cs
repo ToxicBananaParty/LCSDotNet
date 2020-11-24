@@ -1,7 +1,15 @@
 ﻿namespace LCSDotNet.Data
 {
-    public class LocationEnums
+    public enum LocationType
     {
-        
+        HousingProjects,
+        CrackHouse,
+        TextileFactory,
+        CosmeticLab,
+        DowntownApartments,
+        UniversityApartments,
+        HomelessShelter,
+        AbandonedFactory,
+        IndustrialApartments
     }
 }

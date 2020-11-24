@@ -2,6 +2,6 @@
 {
     public class Location
     {
-        
+        public int rations;
     }
 }

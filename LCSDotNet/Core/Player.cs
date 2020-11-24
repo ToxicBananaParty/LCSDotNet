@@ -278,6 +278,11 @@ namespace LCSDotNet.Core
         public Gender gender;
         public Dictionary<Attribute, float> attributes;
         public Dictionary<Skill, float> skills;
+        public List<LocationType> safeHouses;
+        public List<Character> recruits, loveSlaves;
+        public List<Vehicle> vehicles;
+        public List<Item> inventory;
+        public float money, juice;
 
         public Player(string name, Gender gender, string location)
         {
@@ -286,6 +291,11 @@ namespace LCSDotNet.Core
             this.gender = gender;
             attributes = new Dictionary<Attribute, float>((int)Attribute.NUM_ATTRIBUTES);
             skills = new Dictionary<Skill, float>((int)Skill.NUM_SKILLS);
+            safeHouses = new List<LocationType>();
+            recruits = new List<Character>();
+            loveSlaves = new List<Character>();
+            vehicles = new List<Vehicle>();
+            money = 0.0f;
             initAttributes();
             initSkills();
         }
@@ -296,6 +306,11 @@ namespace LCSDotNet.Core
             gender = Gender.Neutral;
             attributes = new Dictionary<Attribute, float>((int)Attribute.NUM_ATTRIBUTES);
             skills = new Dictionary<Skill, float>((int)Skill.NUM_SKILLS);
+            safeHouses = new List<LocationType>();
+            recruits = new List<Character>();
+            loveSlaves = new List<Character>();
+            vehicles = new List<Vehicle>();
+            money = 0.0f;
             initAttributes();
             initSkills();
         }

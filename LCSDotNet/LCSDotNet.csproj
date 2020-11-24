@@ -66,6 +66,8 @@
     <Compile Include="Data\NameGenerator.cs" />
     <Compile Include="Data\PersonalityQuestions.cs" />
     <Compile Include="Data\TextExtensions.cs" />
+    <Compile Include="Data\Vehicle.cs" />
+    <Compile Include="Data\VehicleEnums.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

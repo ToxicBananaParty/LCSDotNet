@@ -11,10 +11,9 @@ namespace LCSDotNet.Data
         public Dictionary<Attribute, float> attributes;
         public Dictionary<Skill, float> skills;
 
-        public Character(string name, string codename, Gender gender)
+        public Character(string name, Gender gender)
         {
             this.name = name;
-            this.codename = codename;
             this.gender = gender;
             type = (CharacterType) Game.rand.Next(1, (int) CharacterType.NUM_CHARTYPES);
             attributes = new Dictionary<Attribute, float>((int)Attribute.NUM_ATTRIBUTES);
@@ -23,11 +22,21 @@ namespace LCSDotNet.Data
             initSkills();
         }
 
-        public Character(string name, string codename, Gender gender, CharacterType type)
+        public Character(string name, Gender gender, CharacterType type)
         {
             this.name = name;
-            this.codename = codename;
             this.gender = gender;
+            this.type = type;
+            attributes = new Dictionary<Attribute, float>((int)Attribute.NUM_ATTRIBUTES);
+            skills = new Dictionary<Skill, float>((int)Skill.NUM_SKILLS);
+            initAttributes();
+            initSkills();
+        }
+
+        public Character(CharacterType type)
+        {
+            gender = (Gender) Game.rand.Next((int) Gender.NUM_GENDERS);
+            name = Game.nameGenerator.Generate(gender);
             this.type = type;
             attributes = new Dictionary<Attribute, float>((int)Attribute.NUM_ATTRIBUTES);
             skills = new Dictionary<Skill, float>((int)Skill.NUM_SKILLS);
@@ -89,5 +98,7 @@ namespace LCSDotNet.Data
             skills.Add(Skill.Throwing, 0.0f);
             skills.Add(Skill.Writing, 0.0f);
         }
+        
+        //TODO Calculate Attributes, Skills
     }
 }
