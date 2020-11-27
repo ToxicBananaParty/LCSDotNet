@@ -118,7 +118,7 @@ namespace LCSDotNet.Core
             console.Clear();
             while (console.WindowUpdate()) {
                 while (!advancedOptions) {
-                    console.Write(3, 5, "New Game of Liberal Crime Squad: Advanced Gameplay Options");
+                    console.Write(2, 5, "New Game of Liberal Crime Squad: Advanced Gameplay Options");
                     console.Write(6, 1,
                         classicSelected ? selected : unselected + " A - Classic Mode: No Conservative Crime Squad",
                         fireSelected ? Color4.Gray : Color4.White);

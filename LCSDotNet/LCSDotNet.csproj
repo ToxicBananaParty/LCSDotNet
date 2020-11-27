@@ -56,14 +56,15 @@
     <Compile Include="Core\Globals.cs" />
     <Compile Include="Core\Player.cs" />
     <Compile Include="Data\Armor.cs" />
-    <Compile Include="Data\ArmorEnums.cs" />
+    <Compile Include="Data\Backend\ArmorEnums.cs" />
+    <Compile Include="Data\Backend\CharacterEnums.cs" />
+    <Compile Include="Data\Backend\ItemEnums.cs" />
+    <Compile Include="Data\Backend\LocationEnums.cs" />
+    <Compile Include="Data\Backend\NameGenerator.cs" />
+    <Compile Include="Data\Backend\VehicleEnums.cs" />
     <Compile Include="Data\Character.cs" />
-    <Compile Include="Data\CharacterEnums.cs" />
     <Compile Include="Data\Item.cs" />
-    <Compile Include="Data\ItemEnums.cs" />
     <Compile Include="Data\Location.cs" />
-    <Compile Include="Data\LocationEnums.cs" />
-    <Compile Include="Data\NameGenerator.cs" />
     <Compile Include="Data\PersonalityQuestions.cs" />
     <Compile Include="Data\Politics\Bill.cs" />
     <Compile Include="Data\Politics\Government.cs" />
@@ -74,7 +75,6 @@
     <Compile Include="Data\Politics\SupremeCourt.cs" />
     <Compile Include="Data\TextExtensions.cs" />
     <Compile Include="Data\Vehicle.cs" />
-    <Compile Include="Data\VehicleEnums.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

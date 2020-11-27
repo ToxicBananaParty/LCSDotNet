@@ -11,6 +11,18 @@ namespace LCSDotNet.Data
             console.Write(row, col, text, Color4.White);
         }
 
+        public static void Write(this ConsoleWindow console, int row, string text)
+        {
+	        int column = (Program.width - text.Length) / 2;
+	        console.Write(row, column, text, Color4.White);
+        }
+
+        public static void Write(this ConsoleWindow console, int row, string text, Color4 color)
+        {
+	        int column = (Program.width - text.Length) / 2;
+	        console.Write(row, column, text, color);
+        }
+
         public static string GetInput(this ConsoleWindow console, int row, int column)
         {
 	        string input = "";
