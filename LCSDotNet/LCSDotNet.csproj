@@ -65,6 +65,13 @@
     <Compile Include="Data\LocationEnums.cs" />
     <Compile Include="Data\NameGenerator.cs" />
     <Compile Include="Data\PersonalityQuestions.cs" />
+    <Compile Include="Data\Politics\Bill.cs" />
+    <Compile Include="Data\Politics\Government.cs" />
+    <Compile Include="Data\Politics\HouseOfReps.cs" />
+    <Compile Include="Data\Politics\Politician.cs" />
+    <Compile Include="Data\Politics\PoliticsEnums.cs" />
+    <Compile Include="Data\Politics\Senate.cs" />
+    <Compile Include="Data\Politics\SupremeCourt.cs" />
     <Compile Include="Data\TextExtensions.cs" />
     <Compile Include="Data\Vehicle.cs" />
     <Compile Include="Data\VehicleEnums.cs" />
