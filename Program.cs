@@ -7,6 +7,7 @@ namespace LCSDotNet
 {
     public static class Program
     {
+        public static Console console;
         public static readonly int width = 128, height = 32;
         static void Main()
         {
@@ -23,12 +24,12 @@ namespace LCSDotNet
 
         static void Init()
         {
-            var console = new Console(width, height);
+            console = new Console(width, height);
             console.FillWithRandomGarbage();
             console.Fill(new Rectangle(3, 3, 23, 3), Color.Violet, Color.Black, 0, 0);
             console.Print(4, 4, "Hello from SadConsole");
 
-            SadConsole.Global.CurrentScreen = console;
+            Global.CurrentScreen = console;
         }
     }
 }
