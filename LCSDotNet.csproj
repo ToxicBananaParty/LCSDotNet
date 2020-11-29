@@ -8,12 +8,17 @@
 
   <ItemGroup>
     <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="SadConsole" Version="8.99.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove=".gitignore" />
+    <None Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Core" />
-    <Folder Include="Data" />
   </ItemGroup>
 
 </Project>
